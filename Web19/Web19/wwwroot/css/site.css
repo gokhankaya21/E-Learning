@@ -1,0 +1,406 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*font-family:Roboto;*/
+    background-color:#fafafa;
+    font-family:Roboto;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container{
+    width:100%;
+}
+.row{
+    margin:0px;
+}
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+.navbar-inverse{
+    background-color:#1665d8;
+    border-color:white;
+}
+    .navbar-inverse .navbar-nav > li > a {
+        color: white;
+        font-size: 8pt;
+        opacity:0.75;
+    }
+        .navbar-brand > div {
+            color: white;
+            padding-top:5px; 
+            padding-left:7px;
+        }
+        .navbar-brand > img{
+            display:unset;
+            width:35px;
+            height:35px;
+            padding-top:0px;
+            margin-top:-5px;
+        }
+.navbar-toggle{
+    margin-left:15px;
+    margin-right:0px;
+    float:left;
+}
+.alms {
+    margin-top: -32px;
+    margin-left: 40px;
+    font-size: 10pt;
+}
+.navbar-nav{
+    margin-left:33%;
+    
+}
+.topMenu{
+    width:100%;
+    text-align:center;
+    font-size:8pt;
+    padding-top:20px;
+}
+.topMenu div{
+    float:left;
+    padding-left:20px;
+}
+    .topMenu a {
+        color: #d1d5ef;
+        text-decoration: none;
+    }
+    .topMenu div a:hover{
+       color:white;        
+    }
+.wrapper{
+    display:flex;
+    width:100%;
+    align-items:stretch;
+}
+.sidebar {
+    background-color: white;
+    min-width: 280px;
+    max-width:280px;
+    height: 900px;
+    float: left;
+    border-right: solid 1px #eaedf3; 
+    margin-top:0px;
+}
+    .sidebar.active {
+        margin-left: -280px;
+    }
+.dashboard{
+    float:left;
+    padding-left:20px;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -280px;
+    }
+        .sidebar.active {
+            margin-left: 0px;
+        }
+    .dashboard {
+        float: left;
+        padding-left: 20px;
+    }
+}
+.accountBox {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+.accountPhoto {
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-top: -20px;
+}
+.accountText {
+    float: left;
+    padding-left: 10px;
+    margin-top: -15px;
+    font-size: 10pt;
+}
+.accountTitle {
+    color: #9ea0a5;
+}
+.accountRow {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.accountStat {
+    float: left;
+}
+.accountBorder {
+    padding-right: 20px;
+    border-right: solid 1px #eaedf3;
+}
+.accountStatText {
+    font-size: 16pt;
+    font-weight: bold;
+}
+.accountStatDesc {
+    font-size: 8pt;
+    color: #9ea0a5;
+    display: inline-block;
+}
+.accountSlicer {
+    border-bottom: solid 1px #eaedf3;
+    margin-left: 0px;
+}
+
+.accountStatPadding {
+    padding-left: 15px;
+}
+
+.menuTitle {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.menuSubtitle {
+    font-weight: bold;
+}
+.menuItem {
+    padding-top: 10px;
+    width: 100%;
+    display: inline-block;
+    height: 36px;
+    border-left: solid 3px white;
+    cursor: pointer;
+}
+    .menuItem img {
+        float: left;
+        padding-left: 20px;
+    }
+    .menuItem div {
+        float: left;
+        padding-left: 15px;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    .menuItem:hover {
+        color: #1665d8;
+        border-left: solid 3px #1665d8;
+        background-color: #f6f9fd;
+    }
+.menuTitleLeft {
+    float: left;
+    padding-top: 2.5px;
+}
+.menuTitleRight {
+    float: right;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.statNumber {
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+.menuBlock {
+    display: inline-block;
+}
+.graphColumn {
+    width: 23px;
+    float: left;
+    margin-right: 13px;
+    position: relative;
+}
+.graphBar {
+    width: 23px;
+    height: 56.1px;
+    border-radius: 2px;
+    background-color: #1665d8;
+    float: left;
+    position: absolute;
+    bottom: 20px;
+}
+.graphLabel {
+    float: left;
+    width: 23px;
+    text-align: center;
+    font-size: 8pt;
+    color: #9ea0a5;
+    position: absolute;
+    bottom: 0px;
+}
+
+.graphRow {
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+}
+.lessonBox{
+    width:300px;
+    height:218px;
+    background-color:white;
+    border:solid 1px #eaedf3;
+    padding:10px 10px 10px 10px;
+    border-radius:4px;
+    margin-right:20px;
+}
+.lessonLeft{
+    display:block;
+    width:50%;
+    float:left;
+    padding-left:0px;
+    padding-right:10px;
+}
+.lessonRight{
+    float:right;
+    margin-top: -196px;
+}
+.lessonDate{
+    font-size:8pt;
+    color:#eaedf3;
+    padding-top:100px;
+}
+.lessonTitle {
+    font-weight: bold;
+    font-size: 9pt;
+    padding-right:5px;
+}
+.lessonBar{
+    position:relative;
+    padding-top:0px;
+    
+}
+.lessonBarBase{
+    position:absolute;
+    width:100px;
+    height:2px;
+    background-color:#eaedf3;
+}
+.lessonBarGreen {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #37b047;
+}
+.lessonEnroll{
+    padding-top:7px;
+    color:blue;
+    font-weight:bold;
+}
+.dashboardSlider{
+    display:flex;
+}
+.tableView {
+    width: 100%;
+    height:720px;
+    margin: 20px 0px 0px 0px;
+    background-color: white;
+    border: solid 1px #eaedf3;
+    border-radius:4px;
+}
+.tableRow{
+    height:70px;
+    border-bottom:solid 1px #eaedf3;
+    font-size:8pt;
+    color:#9ea0a5;
+    margin:inherit;
+}
+.tableCell {
+    vertical-align: middle;
+    width: 100%;
+    display: table-cell;
+    padding-left:20px;
+    padding-right:20px;
+    height:50px;
+}
+.tableTitle{
+    margin-top:15px;
+    font-weight:bold;
+    font-size:10pt;
+    float:left;
+    color:black;
+}
+.tableDesc{
+    color:#9ea0a5;
+    font-size:8pt;
+}
+.tableCellFill{
+    float:left;
+    margin-top: -47px;
+    width:100%;
+    text-align:right;
+}
+.miniPhoto{
+    border-radius:50%;
+    float:right;
+    margin-left: 5px;
+    margin-top: -17px;
+    width:45px;
+    height:45px;
+}
+.arrowIcon {
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+.tableLeft{
+    float:left;
+    padding-left:20px;
+    font-size:12pt;
+}
+.tableText{
+    float:left;
+    padding-left:25px;
+}
+.tableRight{
+    float:right;
+}
+.companyName{
+    color:black;
+    font-weight:bold;
+    font-size:10pt;
+}
+.paymentDesc{
+    padding-top:5px;
+}
+.day{
+    padding-top:5px;
+    padding-left:2px;
+}
+.cost {
+    padding-right: 25px;
+    color:#34aa44;
+    font-size: 10pt;
+    font-weight:bold;
+
+}
+.currencyUnit{
+    text-align:right;
+    padding-right:25px;
+    padding-top:5px;
+    font-size:10pt;
+}
